@@ -28,3 +28,4 @@ replay_pid*
 
 # Images #
 /src/main/resources/images
+*.png

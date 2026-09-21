@@ -19,6 +19,10 @@ public class Main {
 
         int width = bufferedImage.getWidth();
         int height = bufferedImage.getHeight();
+
+        if (width <= 1 && height <= 1) {
+            return;
+        }
         int[] rgbs = new int[width * height];
 
         bufferedImage.getRGB(0, 0, width, height, rgbs, 0, width);
