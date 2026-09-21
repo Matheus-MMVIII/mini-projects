@@ -27,8 +27,8 @@ public class Main {
 
         bufferedImage.getRGB(0, 0, width, height, rgbs, 0, width);
 
-        int newWidth = width / 2;
-        int newHeight = height / 2;
+        int newWidth = (width + 1) / 2;
+        int newHeight = (height + 1) / 2;
 
         BufferedImage newImage = new BufferedImage(newWidth, newHeight, BufferedImage.TYPE_INT_RGB);
 
